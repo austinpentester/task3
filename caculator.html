@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Calculator</title>
+  <meta name="description" content="Simple Calculator Developed by Austin" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" id="theme" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="header-container">
+        <!-- This heading also notifies about the theme change.-->
+        <h1 id="toast">Calculator</h1>
+        <div class="top-buttons">
+
+
+        </div>
+      </div>
+      <div class="first-row">
+        <input type="text" name="result" id="result" placeholder="" readonly />
+        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+      </div>
+      <!-- ithu key bord input page html desing -->
+      <div class="second-row">
+        <input type="button" value="1" onclick="valScreen(1)" />
+        <input type="button" value="2" onclick="valScreen(2)" />
+        <input type="button" value="3" onclick="valScreen(3)" />
+        <input type="button" value="+" onclick="valScreen('+')" />
+      </div>
+      <div class="third-row">
+        <input type="button" value="4" onclick=" valScreen(4)" />
+        <input type="button" value="5" onclick=" valScreen(5)" />
+        <input type="button" value="6" onclick=" valScreen(6)" />
+        <input type="button" value="-" onclick="valScreen('-')" />
+      </div>
+      <div class="fourth-row">
+        <input type="button" value="7" onclick="valScreen(7)" />
+        <input type="button" value="8" onclick="valScreen(8)" />
+        <input type="button" value="9" onclick=" valScreen(9)" />
+        <input type="button" value="x" onclick="valScreen('*')" />
+      </div>
+      <div class="fifth-row">
+        <input type="button" value="/" onclick="valScreen('/')" />
+        <input type="button" value="0" onclick="valScreen(0)" />
+        <input type="button" value="." onclick="valScreen('.')" />
+        <input type="button" value="=" onclick="calculate(result.value)" />
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
